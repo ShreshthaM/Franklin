@@ -1,5 +1,30 @@
-.franklin-banner
-{
-    background-color: beige;
-    border: 2px solid black;
-}
+.franklin-banner > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .franklin-banner img {
+    width: 100%;
+  }
+  
+  .franklin-banner > div > div {
+    order: 1;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  @media (min-width: 900px) {
+    .franklin-banner> div {
+      align-items: center;
+      flex-direction: unset;
+      gap: 32px;
+    }
+  
+    .franklin-banner > div > div {
+      flex: 1;
+      order: unset;
+    }
+  }
+  
